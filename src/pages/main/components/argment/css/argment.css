@@ -1,0 +1,46 @@
+#flex_props_home {
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  box-shadow: -5px 0 8px rgba(0, 0, 0, 0.1);
+}
+#flex_props_home .canvas-tips .welcome {
+  font-size: 1.1em;
+  background: #f5f5f5;
+  padding: 10px;
+}
+#flex_props_home .canvas-tips .canvas-content {
+  padding: 10px;
+}
+#flex_props_home .canvas-tips .canvas-content li {
+  font-size: 1em;
+  line-height: 1.5;
+}
+#flex_props_home .canvas-props .title {
+  font-size: 1.1em;
+  background: #f5f5f5;
+  padding: 10px;
+}
+#flex_props_home .canvas-props .canvas-content {
+  padding: 10px;
+}
+#flex_props_home .canvas-props .canvas-content .ivu-row {
+  padding-bottom: 5px;
+}
+#flex_props_home .canvas-props .canvas-content .ivu-input-number {
+  width: calc(100% - 10px);
+}
+#flex_props_home .canvas-props .canvas-content .label {
+  line-height: 32px;
+}
+#flex_props_home .port-content .title .addIcon {
+  float: right;
+  color: green;
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+#flex_props_home .port-content .title .addIcon:active {
+  opacity: 0.8;
+}

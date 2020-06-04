@@ -1,0 +1,230 @@
+#manageDiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #EFF4F8;
+  position: relative;
+
+  .ivu-row {
+    width: 100%;
+    height: 100%;
+
+    >.ivu-col {
+      height: 100%;
+    }
+  }
+
+  .lfnr,
+  .rtnr {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+  }
+
+  .tab-tabbar {
+    width: 100%;
+    border-bottom: 1px solid rgba(2, 10, 24, 0.15);
+
+    span {
+      display: inline-block;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 20px;
+      text-align: center;
+      min-width: 100px;
+      color: #020A18;
+      font-size: 14px;
+      position: relative;
+      cursor: pointer;
+
+      &.current {
+        color: #1764E8;
+
+        &::after {
+          width: 100%;
+          height: 2px;
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          background: #1764E8;
+        }
+      }
+    }
+  }
+
+  .tab-listBox {
+    width: 100%;
+    height: calc(100% - 46px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 16px;
+
+    .tab-top {
+      padding: 0 0 16px;
+      position: relative;
+
+      .tab-top-search {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .tab-content {
+
+      .tab-add-item,
+      .tab-list-item {
+        width: 100%;
+        height: 200px;
+        border-radius: 2px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        font-size: 14px;
+        color: #020A18;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 16px;
+
+      }
+
+      .tab-add-item {
+        border-style: dashed;
+        cursor: pointer;
+        -moz-user-select: none;
+        /*火狐*/
+        -webkit-user-select: none;
+        /*webkit浏览器*/
+        -ms-user-select: none;
+        /*IE10*/
+        -khtml-user-select: none;
+        /*早期浏览器*/
+        user-select: none;
+
+        .ivu-icon {
+          font-size: 3em;
+          color: rgba(0, 0, 0, 0.45);
+        }
+
+        .add-task {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          p {
+            padding-top: 1em;
+          }
+        }
+
+        &:hover {
+          background: rgba(2, 10, 24, 0.04);
+        }
+
+        &:active {
+          opacity: 0.8;
+          color: #1764E8;
+
+          .ivu-icon {
+            color: #1764E8;
+          }
+        }
+
+      }
+
+      .img-responsive {
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+      }
+
+      .tab-list-item {
+        .image-clip {
+          width: 100%;
+          height: 160px;
+          overflow: hidden;
+        }
+
+        .task-title {
+          line-height: 40px;
+          padding: 0 30px 0 15px;
+          text-align: left;
+          background: #fff;
+          position: relative;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          .ivu-icon {
+            font-size: 1.3em;
+            color: rgba(2, 10, 24, 0.5);
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 9;
+            background: #fff;
+            cursor: pointer;
+            display: none;
+          }
+        }
+
+        .task-hover {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+
+          .task-mask {
+            width: 100%;
+            height: 100%;
+            background: rgba(2, 10, 24, 0.15);
+            cursor: pointer;
+            display: none;
+          }
+
+          .task-edit {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 99;
+
+            .task-edit-content {
+              padding: 5px 0;
+              background: #f2f2f2;
+              color: #1764E8;
+              display: none;
+              cursor: pointer;
+
+              .dlt {
+                color: #FF4D4F;
+              }
+
+              .border {
+                border: 1px solid rgba(2, 10, 24, 0.15);
+                border-top: none;
+                border-bottom: none;
+              }
+            }
+          }
+        }
+
+        &:hover {
+
+          .task-title .ivu-icon,
+          .task-hover .task-mask {
+            display: block;
+          }
+
+          .task-edit .task-edit-content {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

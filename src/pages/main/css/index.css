@@ -1,0 +1,59 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.mainContainer .toolbar {
+  position: absolute;
+  right: 25%;
+  top: 10px;
+  z-index: 99;
+}
+.mainContainer .ivu-row {
+  width: 100%;
+  height: 100%;
+}
+.mainContainer .ivu-row > .ivu-col {
+  height: 100%;
+}
+.canvas {
+  width: 100%;
+  height: 100%;
+  background: url(../images/grid.gif);
+  overflow: hidden;
+}
+.canvas .status-icon {
+  display: block;
+  position: absolute;
+  z-index: 999;
+}
+/*右键菜单样式*/
+.context-menus {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 100;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  min-width: 10em;
+  text-align: left;
+  font-size: 14px;
+  padding: 0.5em 0;
+}
+.context-menus .line {
+  background-color: transparent !important;
+  padding: 0;
+  margin: 0.05rem 0;
+  border-top: 1px solid #eee;
+}
+.context-menus .menu-item {
+  line-height: 1.5;
+}
+.context-menus .menu-item .menu {
+  color: #333333;
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+}

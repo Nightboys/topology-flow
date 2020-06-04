@@ -1,0 +1,190 @@
+#manageDiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #EFF4F8;
+  position: relative;
+}
+#manageDiv .ivu-row {
+  width: 100%;
+  height: 100%;
+}
+#manageDiv .ivu-row > .ivu-col {
+  height: 100%;
+}
+#manageDiv .lfnr,
+#manageDiv .rtnr {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #fff;
+}
+#manageDiv .tab-tabbar {
+  width: 100%;
+  border-bottom: 1px solid rgba(2, 10, 24, 0.15);
+}
+#manageDiv .tab-tabbar span {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  text-align: center;
+  min-width: 100px;
+  color: #020A18;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+#manageDiv .tab-tabbar span.current {
+  color: #1764E8;
+}
+#manageDiv .tab-tabbar span.current::after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background: #1764E8;
+}
+#manageDiv .tab-listBox {
+  width: 100%;
+  height: calc(100% - 46px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 16px;
+}
+#manageDiv .tab-listBox .tab-top {
+  padding: 0 0 16px;
+  position: relative;
+}
+#manageDiv .tab-listBox .tab-top .tab-top-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item,
+#manageDiv .tab-listBox .tab-content .tab-list-item {
+  width: 100%;
+  height: 200px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  color: #020A18;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item {
+  border-style: dashed;
+  cursor: pointer;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item .ivu-icon {
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.45);
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item .add-task {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item .add-task p {
+  padding-top: 1em;
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item:hover {
+  background: rgba(2, 10, 24, 0.04);
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item:active {
+  opacity: 0.8;
+  color: #1764E8;
+}
+#manageDiv .tab-listBox .tab-content .tab-add-item:active .ivu-icon {
+  color: #1764E8;
+}
+#manageDiv .tab-listBox .tab-content .img-responsive {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .image-clip {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-title {
+  line-height: 40px;
+  padding: 0 30px 0 15px;
+  text-align: left;
+  background: #fff;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-title .ivu-icon {
+  font-size: 1.3em;
+  color: rgba(2, 10, 24, 0.5);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 9;
+  background: #fff;
+  cursor: pointer;
+  display: none;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover .task-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 10, 24, 0.15);
+  cursor: pointer;
+  display: none;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover .task-edit {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover .task-edit .task-edit-content {
+  padding: 5px 0;
+  background: #f2f2f2;
+  color: #1764E8;
+  display: none;
+  cursor: pointer;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover .task-edit .task-edit-content .dlt {
+  color: #FF4D4F;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item .task-hover .task-edit .task-edit-content .border {
+  border: 1px solid rgba(2, 10, 24, 0.15);
+  border-top: none;
+  border-bottom: none;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item:hover .task-title .ivu-icon,
+#manageDiv .tab-listBox .tab-content .tab-list-item:hover .task-hover .task-mask {
+  display: block;
+}
+#manageDiv .tab-listBox .tab-content .tab-list-item:hover .task-edit .task-edit-content {
+  display: flex;
+}
