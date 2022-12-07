@@ -16,7 +16,7 @@
     "iview": "^3.2.2",
     "iview-loader": "^1.2.2",
     "jquery": "^3.4.1",
-    "qs": "^6.5.2",
+    "qs": "^6.7.3",
     "save": "^2.3.2",
     "babel-plugin-import": "^1.10.0",
     "less": "^3.11.1",
